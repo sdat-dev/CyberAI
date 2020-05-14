@@ -1,0 +1,377 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Primary use:    Common.css file used for styling header, footer and
+                common components across the Cyber-AI webpage
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Layout]
+
+* body
+    + Header / #navbar-header
+    + Landing-Page-Wrapper / .landing-page-image-wrapper
+        -Landing-Page-Image / .landing-page-image
+    + Content / .content-wrapper
+        - Buffer Space/ .buffer 
+        - Side Navigation bar / #navigation-bar
+        - Main Content/ .main-content
+    + Footer / #footer
+        - Address/ address
+        - Footer Navigation/ .footer-navigation
+        - CopyRight Content/ #copyright-content
+-------------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.buffer {
+    height: 75px;
+    width: 100%;
+}
+
+.grey-content-header {
+    color: #777;
+    font-family: 'TradeGothicLTStd-BdCn20', Helvetica, Arial, sans-serif;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.black-content-header-less-margin {
+    color: #555;
+    font-family: 'TradeGothicLTStd-BdCn20', Helvetica, Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+.black-content-header-no-margin {
+    color: #555;
+    font-family: 'TradeGothicLTStd-BdCn20', Helvetica, Arial, sans-serif;
+}
+
+.grey-content-header-less-margin {
+    color: #777;
+    font-family: 'TradeGothicLTStd-BdCn20', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.content-header {
+    color: #46166C;
+    font-family: 'TradeGothicLTStd-BdCn20', Helvetica, Arial, sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.content-header-top-bottom-margin{
+    color: #46166C;
+    font-family: 'TradeGothicLTStd-BdCn20', Helvetica, Arial, sans-serif;
+    margin: 20px 0px;
+    text-transform: uppercase;
+}
+
+.content-header-no-margin {
+    color: #46166C;
+    font-family: 'TradeGothicLTStd-BdCn20', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.content-wrapper {
+    background: url('../assets/images/bkg-gray-pattern-tile.png');
+}
+
+.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.landing-page-image-wrapper {
+    background-size: contain;
+    height: 70%;
+    width: 100%;
+}
+
+.learn-more-text {
+    text-decoration: underline;
+    color: #46166b;
+}
+
+.email-link{
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+
+.no-link-decoration {
+    color: #46166b;
+    text-decoration: none;
+}
+
+.no-link-decoration:hover{
+    color: inherit;
+}
+
+.main-content {
+    color: #333333;
+    font-size: 20px;
+    font-family: 'News Cycle', Helvetica, Arial, sans-serif;
+    line-height: 26px;
+    padding-bottom: 30px;
+}
+
+#navbar-header {
+    background-color: #46166b;
+    height: 90px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.sub-list {
+    padding-left: 30px;
+}
+
+#landing-page-text-wrapper
+{
+    background-color: rgb(0, 0, 0, 0.5);
+    font-family: 'TradeGothicLTStd-BdCn20', Helvetica, Arial, sans-serif;
+    text-shadow: 3px 1px 2px black;
+    left: 5%;
+    padding: 10px;
+    position: relative;
+}
+
+#landing-page-text-wrapper>h1
+{
+    color: white;
+    text-transform: uppercase;
+}
+
+#landing-page-text-wrapper>p
+{
+    color: #eeb211;
+}
+
+.list-lower-alpha {
+    list-style-type: lower-alpha;
+}
+
+.list-more-indentation > li {
+    padding-left: 5px;
+}
+
+.list-lower-roman {
+    list-style-type: lower-roman;
+}
+
+.sub-list > li{
+    padding-left: 10px;
+}
+
+.purple-font{
+    color: #46166C;
+}
+
+.list-preceding-paragraph, 
+.zero-bottom-margin-paragraph{
+    margin-bottom: 0px;
+}
+
+.main-content> #search-box{
+    background-color: #F9F9F9;
+    height: 40px;
+    border: 1px solid #B9B9B9;
+    border-radius: 1%;
+    font-size: 20px;
+    padding: 5px 0px 10px 2px;
+}
+
+.main-content>#search-box-results{
+    display: block;
+}
+
+#search-button{
+    height: 40px;
+    width: 40px;
+    background-color: #46166b;
+    color: white;
+    position: relative;
+    top: 3px;
+    left: -1px;
+}
+
+.ualbany-logo-wrapper {
+    height: 90px;
+    width: 100%;
+}
+
+.ualbany-logo {
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 340px)
+{
+    .ualbany-logo{
+        margin-left: 5%;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .landing-page-image-wrapper {
+        background-image: url('../assets/images/cyber-ai-background-xs.png');
+        height: 78vw;
+    }
+    #landing-page-text-wrapper
+    {   
+        top: 27%;
+        width: 55%;
+    }
+    #landing-page-text-wrapper>h1
+    {
+        font-size: 6vw;
+    }
+    #landing-page-text-wrapper>p
+    {
+        display: none;
+    }
+    .main-content {
+        padding-top: 20px;
+    }
+    .main-content>ul, .main-content>ol {
+        margin-left: 20px;
+    }
+    .main-content> #search-box{       
+        margin-bottom: 5px;
+        width: 80%;
+    }   
+    .main-content>#search-box-results{
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .landing-page-image-wrapper {
+        background-image: url('../assets/images/cyber-ai-background-sm.png');
+        height: 64.7vw;
+    }
+    #landing-page-text-wrapper
+    {   
+        top: 42%;
+        width: 66%;
+    }
+    #landing-page-text-wrapper>h1
+    {
+        font-size: 6vw;
+    }
+    #landing-page-text-wrapper>p
+    {
+        display: none;
+    }
+    .main-content>ul, .main-content>ol {
+        margin-left: 20px;
+    }
+    .main-content> #search-box{       
+        margin-bottom: 5px;
+        width: 60%;
+    }
+    
+    .main-content>#search-box-results{
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .landing-page-image-wrapper {
+        background-image: url('../assets/images/cyber-ai-background-md.png');
+        height: 48.5vw;
+    }
+    #landing-page-text-wrapper
+    {
+        top: 42%;
+        width: 61%;
+    }
+    #landing-page-text-wrapper>h1
+    {
+        font-size: 4.6vw;
+    }
+    #landing-page-text-wrapper>p
+    {
+        display: none;
+    }
+    .main-content>h1, .main-content>h2, .main-content>h3, .main-content>h4, .main-content>h5, .main-content>h6, .main-content>p, .main-content>div {
+        margin-left: 50px;
+    }
+    section{
+        padding-left: 50px;
+    }
+    .main-content>ul, .main-content>ol {
+        margin-left: 90px;
+    }
+    .main-content> #search-box{       
+        margin: 0px 0px 5px 50px;
+        width: 255px;
+    }
+    .main-content>#search-box-results{
+        margin: 0px 0px 20px 50px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    .main-content> #search-box{       
+        width: 510px;
+    }
+    
+    .landing-page-image-wrapper {
+        background-image: url('../assets/images/cyber-ai-background-lg.png');
+        height: 41.5vw;
+    }
+    #landing-page-text-wrapper
+    {
+        top: 41%;
+        width: 61%;
+    }
+    #landing-page-text-wrapper>h1
+    {
+        font-size: 3.75vw;
+    }
+    #landing-page-text-wrapper>p
+    {
+        display: block;
+        font-size: 1.9vw;
+    }
+}
+
+@media only screen and (min-width: 1192px) {
+    .landing-page-image-wrapper {
+        background-image: url('../assets/images/cyber-ai-background-xl.png');
+        height: 30vw;
+    }
+    #landing-page-text-wrapper
+    {
+        top: 33%;
+        width: 62%;
+    }
+    #landing-page-text-wrapper>h1
+    {
+        font-size: 3.2vw;
+    }
+    #landing-page-text-wrapper>p
+    {
+        font-size: 1.75vw;
+    }
+}

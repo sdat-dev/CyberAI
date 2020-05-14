@@ -1,0 +1,39 @@
+/*------------------------------------------------------------------
+Primary use:    special-designations.css file used for styling components
+                on welcome page
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Layout]
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+Primary use:    special-designations.css file used for styling components
+                inside side-navigation bar
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Layout]
+-------------------------------------------------------------------*/
+#nsa-logo{
+    width: 360px;
+    padding-bottom: 20px;
+}
+
+li{
+    padding-top: 10px;
+}
+
+@media only screen and (min-width: 768px){
+.main-content > a{
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+}
+
+
+@media only screen and (max-width: 360px){
+        #nsa-logo{
+            width: 100%;
+        }
+    }

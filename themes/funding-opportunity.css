@@ -1,0 +1,47 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Primary use:    funding-opportunity.css file used for styling funding
+                opportunities page
+-------------------------------------------------------------------*/
+.agency-logo{
+    width: 100px;
+    margin-bottom: 10px;
+    margin-right: 5%;
+}
+
+.opp-header{
+    clear: left;
+}
+
+.fas{
+    padding-bottom: 5px;
+}
+
+.opportunity-container{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #C0C0C0;
+}
+
+.details-button{
+    background-color: #46166C;
+    padding: 3px 10px 8px 10px;
+    border-radius: 4%;
+    color: white;
+    margin: 20px 0px 20px 0px;
+}
+
+.details-button:hover{
+    background-color: white;
+    border-radius: 4%;
+    color:#46166C;
+    border: 1px solid #46166C;
+}
+
+.opp-details{
+    clear: both;
+}
+
+.opp-description{
+    display: none;
+}

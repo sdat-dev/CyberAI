@@ -1,0 +1,18 @@
+/*------------------------------------------------------------------
+Primary use:    Custom fonts for Cyber-AI Website
+-------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'TradeGothicLTStd-BdCn20';
+    src: url('../assets/fonts/TradeGothicLTStd-BdCn20.ttf');
+}
+
+@font-face {
+    font-family: 'News Cycle';
+    src: url('../assets/fonts/news-cycle.regular.ttf');
+}
+
+@font-face {
+    font-family: 'PublicSans';
+    src: url('../assets/fonts/public-sans.regular.ttf');
+}

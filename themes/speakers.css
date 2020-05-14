@@ -1,0 +1,40 @@
+/*------------------------------------------------------------------
+Primary use:    speakers.css file used for styling components
+                inside page containing list of speakers with images
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Layout]
+-------------------------------------------------------------------*/
+.speakers-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.speakers-info{
+    text-align: center;
+}
+
+@media screen and (min-width: 768px)
+{
+    .title
+    {
+        display: inline-block;
+        height: 120px;
+    }
+}
+
+@media screen and (min-width: 992px)
+{
+    .title
+    {
+        display: inline-block;
+        height: 80px;
+    }
+}
+
+.title
+{
+    color: black;
+}

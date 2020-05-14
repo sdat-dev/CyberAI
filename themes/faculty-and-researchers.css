@@ -1,0 +1,59 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Primary use:    faculty-and-researchers.css file used for styling faculty
+                and researchers page
+-------------------------------------------------------------------*/
+.faculty-info{
+    margin-right: 15%;
+    margin-bottom: 40px;
+}
+
+.faculty-image{
+    width: 200px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    clear: both;
+}
+
+@media screen and (max-width: 1192px)
+{
+    .faculty-info{
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 991px)
+{
+    .faculty-image{
+        float: left;
+        margin-right: 200px;
+        margin-left: 0px;
+        padding-bottom: 10px;
+    }
+    .faculty-info{
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    .faculty-image{
+        float: right;
+        margin-left: 20px;
+        margin-right: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .faculty-image{
+        float: left;
+        margin-left: 0px;
+        margin-right: 60%;
+        padding-bottom: 10px;
+    }
+}

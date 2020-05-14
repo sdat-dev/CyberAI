@@ -1,0 +1,99 @@
+/*------------------------------------------------------------------
+Primary use:    side-navigation.css file used for styling components
+                inside side-navigation bar
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Layout]
+-------------------------------------------------------------------*/
+
+#active-page {
+    background-color: #46166b;
+}
+
+#active-page>a {
+    color: white;
+}
+
+.hover-highlight:hover {
+    background-color: #46166b;
+    color: white;
+}
+
+.hover-highlight:hover>a {
+    background-color: inherit;
+    color: inherit;
+}
+
+.navigation-items {
+    border-bottom: 2px solid #909090;
+    color: #46166B;
+    font-weight: 400;
+    list-style-type: none;
+    padding: 10px 10px 10px 0px;
+}
+
+#expanded-navigation-item {
+    border-bottom: 2px solid #909090;
+    color: #46166B;
+    font-weight: 400;
+    list-style-type: none;
+    padding: 10px 0px 0px 0px;
+}
+
+.navigation-items>a, .first-sub-navigation-item>a, .last-sub-navigation-item>a, #expanded-navigation-item>a, .sub-navigation-items>a {
+    color: inherit;
+    padding-left: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+#navigation-bar {
+    list-style-type: none;
+    font-family: 'TradeGothicLTStd-BdCn20', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    padding-bottom: 30px;
+    position: sticky;
+    top: 105px;
+}
+
+#sub-navigation-bar {
+    list-style-type: none;
+}
+
+.first-sub-navigation-item {
+    color: #46166B;
+    margin-top: 10px;
+    padding: 10px 10px 10px 30px;
+    border-top: 2px solid #909090;
+}
+
+.last-sub-navigation-item {
+    color: #46166B;
+    padding: 10px 10px 10px 30px;
+    border-top: 2px solid #909090;
+}
+
+.sub-navigation-items {
+    color: #46166B;
+    padding: 10px 10px 10px 30px;
+    border-top: 2px solid #909090;
+}
+
+@media only screen and (min-width: 768px) {
+    #navigation-bar {
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #navigation-bar {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #navigation-bar {
+        margin-left: 6%;
+    }
+}

@@ -1,0 +1,75 @@
+/*------------------------------------------------------------------
+Primary use:    academic-programs.css file used for styling content
+                inside Academic programs page
+-------------------------------------------------------------------*/
+
+.accordion-header{
+    background-color: #DDD;
+    border-radius: 1%;
+}
+
+.accordion-header:hover{
+    cursor: pointer;
+}
+
+.accordion-header > .content-header-no-margin{
+    padding: 8px 20px;
+}
+
+.accordion-header > .content-header-no-margin:hover{
+    padding: 8px 20px;
+    text-decoration: underline;
+}
+
+.accordion-content{
+    display: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button.btn-link, button.btn-link > .content-header-no-margin{
+    color: 46166C;
+    background-color: rgba(0,0,0,0);
+    margin-bottom: 0px;
+}
+
+button.btn-link{
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
+
+.card{
+    background-color: transparent;
+    border: 0px;
+}
+
+.accordion > .card:not(:last-of-type),.accordion > .card:last-of-type{
+    border-bottom: 2px solid rgba(0,0,0,0.125);
+}
+
+.card-header{
+    color: #46166C;
+    padding: 0px;
+    background-color: rgba(0,0,0,0);
+}
+
+.card-header:hover  .content-header-no-margin, 
+.card-header:hover button.btn-link, .card-header:hover, .card-header:hover .fa-chevron-down
+{
+    color: white;
+    background-color: #46166C;
+    text-decoration: none;
+}
+
+.btn:focus{
+    text-decoration: none;
+}
+
+.fa-chevron-down{
+    float: right;
+    margin-right: 10px;
+    color: #46166C;
+    line-height: 30px;
+    font-size: 15px;
+}

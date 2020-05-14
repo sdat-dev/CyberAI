@@ -1,0 +1,83 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Primary use:    departments-and-labs.css file used for styling department 
+                and labs page
+-------------------------------------------------------------------*/
+.content-header-department{
+    color: #46166C;
+    font-family: 'TradeGothicLTStd-BdCn20', Helvetica, Arial, sans-serif;
+}
+
+.right-logo{  
+    float: right;
+    margin-left: 20px;
+    width: 300px;
+}
+
+.left-logo{
+    margin-right: 20px;
+    float: left;
+    width: 300px;
+}
+
+.research-center-container,
+.department-container
+{
+    padding-bottom: 20px;
+    min-height: 280px;
+    margin-right: 25%;
+}
+
+
+@media screen and (max-width: 1200px){
+.research-center-container,
+.department-container
+{
+    margin-right: 20px;
+}
+}
+
+@media screen and (max-width: 991px){
+
+.left-logo, .right-logo{
+    float: left;
+    margin-left: 0px;
+    margin-right: 15%;
+    padding-bottom: 10px;
+}
+
+}
+
+@media screen and (max-width: 767px){
+    .research-center-container,
+    .department-container
+    {
+        margin-right: 0px;
+    }
+    
+    .left-logo, .right-logo{
+        margin-right: 20px;
+        padding-bottom: 0px;
+    }  
+    }
+
+    @media screen and (max-width: 599px){
+        .research-center-container,
+        .department-container
+        {
+            margin-right: 10px;
+        }
+        
+        .left-logo, .right-logo{
+            margin-right: 50%;
+            padding-bottom: 10px;
+        }  
+        }
+    
+        
+    @media screen and (max-width: 320px){
+        .left-logo, .right-logo{
+            width: 95%;
+        }  
+        }
