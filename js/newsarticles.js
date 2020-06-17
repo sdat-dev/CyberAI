@@ -37,8 +37,11 @@ let createArticles = function(newartiles){
             content += article.faculty[article.faculty.length-1];
             content += '<br>';
         } 
-        content +='<img class = "article-image" src = "assets/images/news-images/'+ article.image +'.jpg"/>' +
-                '</div>';
+        if(article.image != '')
+        {
+            content +='<img class = "article-image" src = "assets/images/news-images/'+ article.image +'.jpg"/>';
+        }
+        content +='</div>';
     });
     return content;
 }
