@@ -1,7 +1,7 @@
 /*------------------------------------------------------------------
 [Master Stylesheet]
 
-Primary use:    Common.css file used for styling header, footer and
+Primary use:    Common.css file used for styling header and
                 common components across the Cyber-AI webpage
 -------------------------------------------------------------------*/
 
@@ -125,7 +125,7 @@ Primary use:    Common.css file used for styling header, footer and
 .main-content {
     color: #333333;
     font-size: 20px;
-    font-family: 'News Cycle', Helvetica, Arial, sans-serif;
+    font-family: 'PublicSans', sans-serif!important;
     line-height: 26px;
     padding-bottom: 30px;
 }
