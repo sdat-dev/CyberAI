@@ -10,8 +10,45 @@ let addTopMenu = function(){
                                 '<a href="https://www.albany.edu/myualbany">MYUALBANY</a>'+
                                 '<a href="https://www.albany.edu/apply-now">APPLY</a>'+
                                 '<a href="https://www.alumni.albany.edu/s/1642/18-giving/landing.aspx?sid=1642&gid=2&pgid=2040&appealcode=uahome">'+
-                                '   GIVE</a>'+    
+                                '   GIVE</a>'+ 
+                                /* '<button type="button" style="padding-left:25px;padding-right:15px;" class="btn1" id="search-toggle">'+
+                                '<span class="fa fa-search"></i>'+
+                                '</button>'+
+    
+                       
+                                '<span class="mainSearch" style="margin-right:-307px; display:inline-block;">'+
+                                '<button type="button" style="padding-left:25px;padding-right:15px;" class="btn1" id="times-button">'+
+                                '<span class="fa fa-times"></i>'+
+                                '</button>'+ */
+                                '</div>'+
+                                
+
+
+                                '<div class="searchTop"  style="display:inline">' +
+                               ' <form class="searchbox"  > '+
+                               '<button type="button" style="padding-left:25px;padding-right:15px;" class="btn1" id="search-toggle">'+
+                               '<span class="fa fa-search" style="line-height: 50px; font-size: 20px;"></i>'+
+                               '</button>'+
+
+                               '<button type="button" style="padding-left:25px;padding-right:15px;" class="btn1 hidden11 " id="times-button">'+
+                               '<span class="fa fa-times" style="line-height: 50px; font-size: 20px;"></i>'+
+                               '</button>'+
+                                '<input  type="search" style=" width:0px; height:0px; margin-left:20px;" class="searchbox-input" id="textInput" >'+
+                               '<input class="submitButton"  style=" width:0px; height:0px; margin-bottom:5px;" value="Search" type="submit" onclick="getValue()">'+
+
+
+                               
+                            '</form>' +
                             '</div>'+
+                                    
+
+                               
+
+
+
+                              
+
+                            
                         '</div>';
     navheader.innerHTML = headerContent;
 
@@ -79,35 +116,35 @@ let addTopMenu = function(){
                                         '</ul>'+
                                     '</div>'+
                                 '</div>'+
-                                '<div class="d-flex justify-content-center">'+
+                                '<div class="d-flex justify-content-center" style="height:55px">'+
                                     '<div class=" p-2">'+ 
                                         '<a  href="https://www.albany.edu/main/facebook.shtml">'+
-                                            '<span class="fab fa-facebook-f" style="font-size:24px; color:white"></span>'+
+                                            '<span class="fab fa-facebook-f" style="font-size:22px; color:white"></span>'+
                                         '</a>'+
                                     '</div>'+
                                     '<div class="p-2">'+ 
                                         '<a href="https://www.albany.edu/main/twitter.shtml">'+
-                                            '<i class="fab fa-twitter" style="font-size:24px;color:white"></i>'+
+                                            '<i class="fab fa-twitter" style="font-size:22px;color:white"></i>'+
                                         '</a>'+
                                     '</div>'+
                                     '<div class="p-2">'+ 
                                         '<a href="https://www.instagram.com/ualbany/">'+
-                                            '<i class="fab fa-instagram" style="font-size:24px; color:white"></i>'+
+                                            '<i class="fab fa-instagram" style="font-size:22px; color:white"></i>'+
                                         '</a>'+
                                     '</div>'+
                                     '<div class="p-2">'+ 
                                         '<a href="https://www.snapchat.com/add/ualbany">'+
-                                            '<i class=" fab fa-snapchat" style="font-size:24px; color:white"></i>'+
+                                            '<i class=" fab fa-snapchat" style="font-size:22px; color:white"></i>'+
                                         '</a>'+
                                     '</div>'+
                                     '<div class="p-2">'+ 
                                         '<a href="https://www.albany.edu/main/youtube.shtml">'+
-                                            '<i class=" fab fa-youtube"  style="font-size:24px; color:white"></i>'+
+                                            '<i class=" fab fa-youtube"  style="font-size:22px; color:white"></i>'+
                                         '</a>'+
                                     '</div>'+
                                     '<div class="p-2">'+ 
                                         '<a href="https://www.albany.edu/main/linkedin.shtml">'+
-                                            '<i class="  fab fa-linkedin" style="font-size:24px; color:white"></i>'+
+                                            '<i class="  fab fa-linkedin" style="font-size:22px; color:white"></i>'+
                                         '</a>'+
                                     '</div>'+
                                 '</div>'+
@@ -122,7 +159,6 @@ let addTopMenu = function(){
 }
 
 addTopMenu();
-
 
 $('#buttonatag').click(function (e) {
 
@@ -149,6 +185,7 @@ $('#buttonatag').click(function (e) {
 
    
 });
+
 $(document).ready(function () {
     $(document).click(function (event) {
         var click = $(event.target);
@@ -157,5 +194,97 @@ $(document).ready(function () {
             $("#buttonatag").click();
         }
     });
+
+
+   
+
+
+    var submitIcon = $('#search-toggle');
+    var inputBox = $('.searchbox-input');
+    var searchBox = $('.searchbox');
+    var isOpen = false;
+    submitIcon.click(function(){
+       
+           $(".topnav-right").animate({ "margin-left":  "416px" },"fast");    
+
+         
+            searchBox.addClass('searchbox-open');
+
+
+            $('#search-toggle').addClass('hidden11');
+            $('#times-button').removeClass('hidden11');
+            $('.searchTop').css("display","inline");
+            setTimeout(showpanel, 200);
+    });  
+     
+    function showpanel(){
+        $('.searchbox-input').css("width","200px");  
+        $('.searchbox-input').css("height","25px");
+
+
+        $('.submitButton').css("width","90px");  
+        $('.submitButton').css("height","25px");
+    }
+
+
+    $('#times-button').click(function() {
+       
+          $(".searchBox").toggleClass('hide');
+          $('.searchbox-input').css("width","0px");  
+          $('.searchbox-input').css("height","0px");
+          $('.submitButton').css("width","0px");  
+          $('.submitButton').css("height","0px");
+          $('#search-toggle').removeClass('hidden11');
+          $('#times-button').addClass('hidden11');
+
+          searchBox.removeClass('searchbox-open');
+
+          $(".topnav-right").animate({ "margin-left":  "730px" },"fast");    
+
+  
+          
+  
+        });
+
+     
+
+
 });
+
+
+
+function buttonUp(){
+    var inputVal = $('.searchbox-input').val();
+    inputVal = $.trim(inputVal).length;
+    if( inputVal !== 0){
+        $('.searchbox-icon').css('display','none');
+    } else {
+        $('.searchbox-input').val('');
+        $('.searchbox-icon').css('display','block');
+    }
+}
+
+
+
+
+
+
 $('#navbarSupportedContent').collapse('hide');
+
+
+
+function getValue() {
+    var text_input = document.getElementById('textInput').value;
+    console.log(text_input);
+  
+  
+  
+  
+  if(text_input === ""){
+      window.open("https://www.albany.edu/search/search_results.php?cx=009452333206896616693%3Aabbjmkl5yry&cof=FORID%3A11&ie=UTF-8&sa.x=0&sa.y=0&sa=Search&siteurl=www.albany.edu%2F&ref=www.google.com%2F&ss=233j24671j6&q=");
+  
+  }else{
+    window.open("https://www.albany.edu/search/search_results.php?cx=009452333206896616693%3Aabbjmkl5yry&cof=FORID%3A11&ie=UTF-8&sa.x=0&sa.y=0&sa=Search&siteurl=www.albany.edu%2F&ref=www.google.com%2F&ss=233j24671j6&q="+text_input);
+  }
+  }
+  
